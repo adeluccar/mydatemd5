@@ -1,0 +1,5 @@
+#!/bin/bash
+
+DATETIME=$(echo $1 $2)
+DATEMD5=$(echo $DATETIME | md5 | head -c6)
+echo -n $DATETIME $DATEMD5
